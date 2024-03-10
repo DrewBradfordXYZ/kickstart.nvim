@@ -35,8 +35,8 @@ return {
     vim.keymap.set('n', '<C-S-h>', function()
       harpoon:list():prev()
     end)
-    vim.keymap.set('n', '<C-S-o>', function()
+    vim.keymap.set('n', '<C-S-l>', function()
       harpoon:list():next()
-    end)
+    end) -- I had to disable this keybind in Wezterm
   end,
 }
