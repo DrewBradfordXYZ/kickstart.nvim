@@ -2,8 +2,8 @@ local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
 --  See `:help wincmd` for a list of all window commands
-keymap('n', '<C-j>', '<C-w>s', { desc = 'Split window horizontally' })
-keymap('n', '<C-l>', '<C-w>v', { desc = 'Split window vertically' })
+keymap('n', '<leader>s', '<C-w>s', { desc = 'Split window horizontally' })
+keymap('n', '<leader>v', '<C-w>v', { desc = 'Split window vertically' })
 
 -- System clipboard
 vim.keymap.set({ 'n', 'v' }, '<leader>p', '"+p', { noremap = true, silent = true, desc = 'System Clipboard: Paste after' })
