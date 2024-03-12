@@ -24,6 +24,8 @@ keymap('n', '<C-n>', ':bnext<CR>', { noremap = true, silent = true, desc = 'Togg
 -- Create new window splits
 keymap('n', '<leader>t', '<C-w>s', { desc = 'Split window horizontally' })
 keymap('n', '<leader>v', '<C-w>v', { desc = 'Split window vertically' })
+-- open a horizaontal split and enter terminal mode
+keymap('n', '<leader>T', ':below 10sp | terminal<CR>', { noremap = true, silent = true, desc = 'Open terminal in horizontal split' })
 
 -- Resize split horizontally and vertically
 keymap('n', '<S-Up>', ':resize +2<CR>', { noremap = true, silent = true })
